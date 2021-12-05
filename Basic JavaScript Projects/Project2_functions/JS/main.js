@@ -10,3 +10,4 @@ function myFunction(){
     sentence += " a lot from this book!"; //adding the the var sentence
     document.getElementById("sentence").innerHTML= sentence; //writing myFunction to html id "sentence"
 }
+
