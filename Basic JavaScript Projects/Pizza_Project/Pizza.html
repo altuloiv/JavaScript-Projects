@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fat Al's Pizzaria</title>
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <script src="Pizza_JavaScript/Pizza.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="Pizza_CSS/Pizza.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="menuBG">
+            <h1>Fat Al's Pizzaria</h1>
+            <p>Certified in Fat-a-fying </br> Your Pizza</p>
+            <input id="btnOrder" type="button" onclick="getReceipt()"
+                value="Place Order">
+            <form id="frmMenu">
+                <div class="menu left">
+                    <h3>Size:</h3>
+                    <input class="size" type="radio" name="Size"
+                        value="Personal Pizza">Personal Pizza<br>
+                    <input class="size" type="radio" name="Size"
+                        value="Medium Pizza">Medium Pizza<br>
+                    <input class="size" type="radio" name="Size"
+                        value="Large Pizza" checked>Large Pizza<br>
+                    <input class="size" type="radio" name="Size"
+                        value="Extra Large Pizza">Extra Large Pizza<br>
+                    <input class="size" type="radio" name="Size"
+                        value="Fat Als Serving">Fat Al's Serving<br>
+                </div>
+                <div class="menu center">
+                    <h3>Vegetables:</h3>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Celery">Celery<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Onions">Onions<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Mushroom">Mushroom<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Olives">Olives<br>
+                </div>
+
+                <div class="menu right">
+                    <h3>Meats:</h3>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Pepperoni">Pepperoni<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Sausage">Sausage<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Canadian Bacon">Canadian Bacon<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Ground Beef">Ground Beef<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Anchovy">Anchovy<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                        value="Chicken">Chicken<br>
+                </div>
+                <div id="cart">
+                    <div id="showText"></div>
+                    <div id="totalPrice"></div>
+                </div>
+            </form>
+        </div>
+        <script src="Pizza_JavaScript/Pizza.js" defer></script>
+    </body>
+</html>
